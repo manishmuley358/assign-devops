@@ -1,0 +1,29 @@
+# Base Linux image
+FROM ubuntu:22.04
+
+# Update packages and install common utilities
+RUN apt-get update && \
+    apt-get install -y \
+        curl \
+        wget \
+        vim \
+        nano \
+        git \
+        tree \
+        iputils-ping && \
+    apt-get clean
+
+# Default working directory
+WORKDIR /app
+
+# Create a sample script demonstrating basic Linux commands
+RUN echo 'echo "Listing current directory:"' > run.sh && \
+    echo 'ls -la' >> run.sh && \
+    echo 'echo "Showing current path:"' >> run.sh && \
+    echo 'pwd' >> run.sh && \
+    echo 'echo "Network check:"' >> run.sh && \
+    echo 'ping -c 2 google.com' >> run.sh && \
+    chmod +x run.sh
+
+# Default startup command
+CMD ["bash", "run.sh"]
