@@ -1,0 +1,31 @@
+# DevOps Assignment – Docker + Git + Linux
+
+## 1. Five DevOps Concepts
+
+### *1. Continuous Integration (CI)*
+A practice where developers frequently merge code changes into a shared repository, improving code stability and enabling automated testing.
+
+### *2. Continuous Delivery (CD)*
+An automated pipeline that ensures every code change is production-ready and deployable at any given moment.
+
+### *3. Infrastructure as Code (IaC)*
+Infrastructure provisioning using code instead of manual configuration, enabling consistent, repeatable environments.
+
+### *4. Containerization*
+Using containers to package applications with dependencies, ensuring consistent behavior across environments.
+
+### *5. Monitoring & Logging*
+Collecting system and application metrics to identify issues, support troubleshooting, and maintain performance visibility.
+
+---
+
+## 2. How the Assignment Would Be Completed
+
+Although Docker is not installed locally, the typical end-to-end workflow is outlined below.
+
+### *Step A — Create a Dockerfile*
+Write a Dockerfile that installs Linux utilities and runs basic commands.
+
+### *Step B — Build the Docker Image (normally)*
+```bash
+docker build -t basic-linux-ops .
