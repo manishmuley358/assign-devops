@@ -33,3 +33,41 @@ A Dockerfile was written to:
 
 ```bash
 docker build -t basic-linux-ops 
+
+
+
+--Git command used
+git init
+git add .
+git commit -m "Added Dockerfile and README for DevOps assignment"
+
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git branch -M main
+git push -u origin main
+
+--Learning outcome
+Creating the Dockerfile and documenting the workflow demonstrates automation, reproducibility, and environment consistency—core principles of DevOps.
+
+Linux
+
+The Dockerfile installs Linux utilities and executes commands like:
+	•	ls -la
+	•	pwd
+	•	ping
+
+This reinforces understanding of essential Linux operations.
+
+Git
+
+Uploading this assignment to GitHub demonstrates:
+	•	Repository creation
+	•	Version control
+	•	Tracking and pushing changes
+
+Docker
+
+Writing the Dockerfile provides understanding of:
+	•	Images vs containers
+	•	RUN vs CMD
+	•	Layered image architecture
+	•	Packaging and automation
