@@ -1,31 +1,35 @@
-# DevOps Assignment – Docker + Git + Linux
-
-## 1. Five DevOps Concepts
+## 1. DevOps Concepts
 
 ### *1. Continuous Integration (CI)*
-A practice where developers frequently merge code changes into a shared repository, improving code stability and enabling automated testing.
+CI is the practice of frequently integrating code into a shared repository. Automated builds and tests run after each change to improve stability and reduce integration issues.
 
 ### *2. Continuous Delivery (CD)*
-An automated pipeline that ensures every code change is production-ready and deployable at any given moment.
+CD ensures that every code change is automatically tested, validated, and ready for deployment. This improves software reliability and shortens release cycles.
 
 ### *3. Infrastructure as Code (IaC)*
-Infrastructure provisioning using code instead of manual configuration, enabling consistent, repeatable environments.
+IaC manages and provisions infrastructure using code instead of manual setups. It improves consistency, enables automation, and allows version-controlled infrastructure.
 
 ### *4. Containerization*
-Using containers to package applications with dependencies, ensuring consistent behavior across environments.
+Containerization packages an application and all its dependencies into a standardized unit. Docker containers ensure consistent environments across development, testing, and production.
 
 ### *5. Monitoring & Logging*
-Collecting system and application metrics to identify issues, support troubleshooting, and maintain performance visibility.
+Monitoring collects system and application metrics, while logging captures runtime events. Together, they support performance insights, troubleshooting, and operational reliability.
 
 ---
 
-## 2. How the Assignment Would Be Completed
+## 2. How This Assignment Would Normally Be Completed
 
-Although Docker is not installed locally, the typical end-to-end workflow is outlined below.
+Below is the end-to-end workflow for building and running the Docker container.  
+Due to environment limitations (Docker not installed locally), the commands are documented for understanding but not executed in this environment.
 
-### *Step A — Create a Dockerfile*
-Write a Dockerfile that installs Linux utilities and runs basic commands.
+### *Step A – Create the Dockerfile*
+A Dockerfile was written to:
+- Use Ubuntu as the base image  
+- Install Linux tools (curl, wget, vim, git, tree, ping)  
+- Generate a script demonstrating Linux commands  
+- Execute that script using the CMD instruction  
 
-### *Step B — Build the Docker Image (normally)*
+### *Step B – Build the Docker Image (Normally Done in Terminal)*
+
 ```bash
-docker build -t basic-linux-ops .
+docker build -t basic-linux-ops 
